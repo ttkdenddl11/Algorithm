@@ -14,7 +14,7 @@ int main() {
 		cin >> s;
 		int len = s.size();
 
-		while (que[len].size() && i - que[len].front() > K) 
+		while (que[len].size() && i - que[len].front() > K) // 등수 차이가 K보다 작거나 같은 친구 
 			que[len].pop();
 		ans += que[len].size();	// 슬라이딩 윈도우
 		que[len].push(i);
