@@ -16,7 +16,7 @@ int main() {
 
 		while (que[len].size() && i - que[len].front() > K) 
 			que[len].pop();
-		ans += que[len].size();	// ½½¶óÀÌµù À©µµ¿ì
+		ans += que[len].size();	// ìŠ¬ë¼ì´ë”© ìœˆë„ìš°
 		que[len].push(i);
 	}
 	cout << ans;
